@@ -13,7 +13,7 @@ class Solution {
         // 우선 주어진 어레이 A를 정렬시킨다. 
         Arrays.sort(A,0,l);
         // 가장 큰 수가 다른 수면 미리 완료
-        if (A[l-1]!=A[l-2]) return A[l];
+        if (A[l-1]!=A[l-2]) return A[l-1];
         
         //정렬된 어레이에서 순차적으로 이전 값과 비교해 다른 수이며 홀수 일 경우, 그 값을 리턴한다 
         for (int i=0, count=0; i<l; i++){
